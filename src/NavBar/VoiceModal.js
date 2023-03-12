@@ -45,8 +45,7 @@ const VoiceModal = ({ handleClose, text }) => {
       startRecording,
       stopRecording,
     } = useWhisper({
-      //apiKey: env.process.REACT_OPENAI_APP_KEY,
-      apiKey: test,
+      apiKey: env.process.REACT_OPENAI_APP_KEY,
       streaming: true,
       timeSlice: 1_000,
     });
